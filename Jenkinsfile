@@ -36,5 +36,6 @@ pipeline {
         stage("OC Rollout") { 
           steps { 
           rollout(deploymentConfigName: demospring, resourceKindAndName: "DeploymentConfig/demospring" , projectName: devinwi)
-    }
+            }
+        }
 }
