@@ -35,7 +35,7 @@ pipeline {
         // or deploying it to a production environment, etc......
         stage("OC Rollout") { 
           steps { 
-          rollout(deploymentConfigName: "demospring", resourceKindAndName: "DeploymentConfig/demospring" , projectName: "devinwi")
+          rollout(deploymentConfigName: "demospring", resourceKindAndName: "DeploymentConfig/demospring", projectName: "devinwi")
             }
         }
 }
